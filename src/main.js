@@ -483,7 +483,7 @@ function updateTextsLang(langData) {
 // 切换语言
 async function changeLanguage(lang) {
   currentLanguage = lang;
-  document.documentElement.setAttribute('lang', lang);
+  document.documentElement.setAttribute('data-lang', lang);
   const langData = await get_lang_res(lang);
   languageResources = langData;
   updateTextsLang(langData);
